@@ -34,3 +34,4 @@ echo "Today's date is $DATE"
 
 # DATA_DIR=robot
 # rm -rf   /data/${DATA_DIR}/  # rm -rf /data/       # rm -rf /data/robot/
+# if varible did not declare means it will remove total data in file.
