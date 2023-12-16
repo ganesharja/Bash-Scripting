@@ -2,7 +2,7 @@
 
 echo "Demo on if and if-else and else-if usage"
 
-ACTION=$1 
+ACTION=restart
 
 if [ "$ACTION" == "start" ]; then   
     echo -e "\e[32m Starting Payment \e[0m"
