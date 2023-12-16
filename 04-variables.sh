@@ -6,7 +6,7 @@
 a=10                # a is a integer
 b=20                # b is also an interger 
 c=xyz               # c is a string 
-DATE="02AUG2023"    # HardCoding
+# DATE="02AUG2023"    # HardCoding
 
 # There is no concept of data types in linux or shellScripting.
 # By default. every thing is a string.
@@ -25,7 +25,7 @@ echo  "Print the value of a : ${a}"
 
 echo "Printing the value of x : $x"   
 
-echo "Today's date is $DATE"
+echo "Today's date is " : date
 #  x is not declared and we are attempting to print and it's not any going to report anything and it just shows null
 
 # [ ]  : Square Branket 
