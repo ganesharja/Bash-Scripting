@@ -1,11 +1,11 @@
 #!/bin/bash 
 
 COMPONENT=$1
-#ENV=$2
+ENV=$2
 HOSTEDZONEID="Z066205830UZ98BLK4TBS"
 INSTANCE_TYPE="t3.micro"
  
-if [ -z $1 ]  ; then 
+if [ -z $1 ] || [ -z $2 ]  ; then 
     echo -e "\e[31m COMPONENT NAME IS NEEDED \e[0m \n \t \t"
     echo -e "\e[35m Ex Usage \e[0m \n\t\t $ bash launch-ec2.sh shipping"
     exit 1
@@ -29,13 +29,13 @@ create_ec2() {
     echo -e "\e[36m **** Creating DNS Record for the $COMPONENT has completed **** \e[0m \n\n"
 }
 
-# if [ "$1" == "all" ]; then 
+if [ "$1" == "all" ]; then 
 
-#     for component in mongodb catalogue cart user shipping frontend payment mysql redis rabbitmg; do 
-#         COMPONENT=$component 
-#         create_ec2
-#     done 
+    for component in mongodb catalogue cart user shipping frontend payment mysql redis rabbitmg; do 
+        COMPONENT=$component 
+        create_ec2
+    done 
 
-# else 
-#         create_ec2 
-# fi 
+else 
+        create_ec2 
+fi 
