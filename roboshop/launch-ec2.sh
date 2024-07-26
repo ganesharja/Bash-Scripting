@@ -29,13 +29,13 @@ create_ec2() {
     echo -e "\e[36m **** Creating DNS Record for the $COMPONENT has completed **** \e[0m \n\n"
 }
 
-if [ "$1" == "all" ]; then 
+# if [ "$1" == "all" ]; then 
 
-    for component in mongodb catalogue cart user shipping frontend payment mysql redis rabbitmg; do 
-        COMPONENT=$component 
-        create_ec2
-    done 
+#     for component in mongodb catalogue cart user shipping frontend payment mysql redis rabbitmg; do 
+#         COMPONENT=$component 
+#         create_ec2
+#     done 
 
-else 
-        create_ec2 
-fi 
+# else 
+#         create_ec2 
+# fi 
