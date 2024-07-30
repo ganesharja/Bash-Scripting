@@ -12,8 +12,8 @@ if [ -z $1 ] || [ -z $2 ]  ; then
 fi 
 
 # AMI_ID="ami-0c1d144c8fdd8d690"
-AMI_ID= "ami-00a9c8ee62d3f943b"
-SG_ID=  "sg-079390db7818da096"
+AMI_ID= ami-00a9c8ee62d3f943b
+SG_ID= sg-079390db7818da096
 
 # AMI_ID= "$(aws ec2 describe-images --filters "Name=name,Values=b55-ganesh-lab"| jq ".Images[].ImageId" | sed -e 's/"//g')" 
 # SG_ID=  "$(aws ec2 describe-security-groups  --filters Name=group-name,Values=B55admin | jq '.SecurityGroups[].GroupId' | sed -e 's/"//g')"       # B55-Allow-all security group id
